@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+
+.header {
+    display: grid;
+    justify-content: center;
+    font-family: "Nunito Sans" sans-serif;
+    background-color: white;
+    border: 2px gray solid;
+    width: calc(100vw);
+    height: 20vh;
+}
+
+.header .basics-detail {
+    padding: 40px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header .logo {
+    margin: 0 200px 0 0;
+}
+
+.header .Company-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .Company-detail .i {
+    width: 45px;
+    margin: 0 20px 0 50px;
+
+}
+
+.header .btn {
+    font-family: "Source Sans Pro" sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 27px;
+    height: 45px;
+    background: transparent;
+    border-radius: 5px;
+    margin: 0 0 0 30px;
+    border-width: 2px;
+    text-transform: uppercase;
+    line-height: 46px;
+    transition: all ease-in-out 0.5s;
+}
+
+.header .btn:hover {
+    background-color: #001a57;
+    color: white;
+}
+
+
+.header .add {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header .detail {
+    font-size: 18px;
+    color: gray;
+}
+
+/* =================== company header css detail ================ */
+
+
+.header .nav {
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000f32;
+    width: 64vw;
+    height: 80px;
+}
+
+.header .nav .social-media-icon {
+    color: #ccd1dd;
+    display: flex;
+    width: 150px;
+}
+.header .nav .cart {
+    display: flex;
+    color: #ccd1dd;
+}
+.header .nav .cart .sup sup {  
+    background-color: transparent;
+}
+
+.header .nav .cart .sup {
+    text-align: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    color: black;
+}
+.header .nav .search-icon{
+    color: #ccd1dd;
+}
+.header .nav ul {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    gap: 30px;
+
+}
+
+.header .nav ul li {
+    list-style: none;
+    color: #87858e;
+}
+
+.header .nav ul li:hover {
+    color: white;
+}
