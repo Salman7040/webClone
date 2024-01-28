@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+}
+
+.myHeader {
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* font-family: "Nunito Sans" sans-serif; */
+  background-color: white;
+  border: 2px gray solid;
+  width: calc(100vw);
+  height: 40vh;
+}
+
+.myHeader .basics-detail {
+  padding: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myHeader .logo {
+  margin: 0 200px 0 0;
+}
+
+.myHeader .Company-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myHeader .Company-detail .i {
+  width: 45px;
+  margin: 0 30px 0 20px;
+}
+
+.myHeader .btn {
+  font-family: "Source Sans Pro" sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 27px;
+  height: 45px;
+  background: transparent;
+  border-radius: 5px;
+  margin: 0 0 0 30px;
+  border-width: 2px;
+  text-transform: uppercase;
+  line-height: 46px;
+  transition: all ease-in-out 0.5s;
+}
+
+.myHeader .btn:hover {
+  background-color: #001a57;
+  color: white;
+}
+
+.myHeader .add {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.myHeader .detail {
+  font-size: 18px;
+  color: gray;
+}
+
+/* =================== company header css detail ================ */
+
+.myHeader .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000f32;
+  width: 90vw;
+  height: 80px;
+}
+
+.myHeader .nav .social-media-icon {
+  color: #ccd1dd;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
+}
+.myHeader .nav .social-media-icon i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.myHeader .nav .cart {
+  display: flex;
+  color: #ccd1dd;
+}
+.myHeader .nav .cart .sup sup {
+  background-color: transparent;
+}
+
+.myHeader .nav .cart .sup {
+  text-align: center;
+  position: relative;
+  right: 9px;
+  bottom: 6px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  color: black;
+}
+.myHeader .nav .search-icon {
+  color: #ccd1dd;
+  height: 100%;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  font-size: 20px;
+}
+.myHeader .nav .search-icon i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.myHeader .nav .cart {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  align-items: center;
+  height: 100%;
+}
+.myHeader .nav .cart i {
+  color: white;
+  cursor: pointer;
+}
+.myHeader .nav ul {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  width: 61%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 30px;
+  
+}
+
+.myHeader .nav ul .myI{
+  padding: 5% 0 0 0;
+  height: 100%;
+  cursor: pointer;
+  list-style: none;
+  color: #87858e;
+}
+
+.myHeader .nav ul .myI:hover {
+  color: white;
+}
+
+/* ===========list drop down started========== */
+
+.nav .myI .drop-dwon-list1,.drop-dwon-list2{
+  
+  list-style: none;
+  background-color: purple;
+  height: 70px;
+  width: 113px;
+  transition: all 2s ease-in-out;
+}
+.nav .myI .drop-dwon-list1{
+  
+  position: relative;
+  top: 38%;
+  right: 20px;
+}
+.nav .myI .drop-dwon-list2{
+  
+  position: relative; 
+  top: 38%; 
+  /* left: 175px;  */
+}
+
