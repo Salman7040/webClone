@@ -1,133 +1,287 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 html {
-    width: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
-
-.header {
-    display: grid;
-    justify-content: center;
-    font-family: "Nunito Sans" sans-serif;
-    background-color: white;
-    border: 2px gray solid;
-    width: calc(100vw);
-    height: 20vh;
+.myHeader {
+  font-family: "Nunito Sans", sans-serif;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: calc(100vw);
+  height: 20vh;
 }
 
-.header .basics-detail {
-    padding: 40px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.myHeader .basics-detail {
+  padding: 40px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header .logo {
-    margin: 0 200px 0 0;
+.myHeader .logo {
+  margin: 0 200px 0 0;
 }
 
-.header .Company-detail {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.myHeader .Company-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header .Company-detail .i {
-    width: 45px;
-    margin: 0 20px 0 50px;
-
+.myHeader .Company-detail .i {
+  width: 45px;
+  margin: 0 30px 0 20px;
 }
 
-.header .btn {
-    font-family: "Source Sans Pro" sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    text-align: center;
-    padding: 0 27px;
-    height: 45px;
-    background: transparent;
-    border-radius: 5px;
-    margin: 0 0 0 30px;
-    border-width: 2px;
-    text-transform: uppercase;
-    line-height: 46px;
-    transition: all ease-in-out 0.5s;
+.myHeader .btn {
+  font-family: "Source Sans Pro" sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  padding: 0 27px;
+  height: 45px;
+  background: transparent;
+  border-radius: 5px;
+  margin: 0 0 0 30px;
+  border-width: 2px;
+  text-transform: uppercase;
+  line-height: 46px;
+  transition: all ease-in-out 0.5s;
 }
 
-.header .btn:hover {
-    background-color: #001a57;
-    color: white;
+.myHeader .btn:hover {
+  background-color: #001a57;
+  color: white;
 }
 
-
-.header .add {
-    font-size: 20px;
-    font-weight: 500;
+.myHeader .add {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.header .detail {
-    font-size: 18px;
-    color: gray;
+.myHeader .detail {
+  font-size: 18px;
+  color: gray;
 }
 
 /* =================== company header css detail ================ */
 
-
-.header .nav {
-    position: relative;
-    top: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #000f32;
-    width: 64vw;
-    height: 80px;
+.myHeader .nav {
+  position: absolute;
+  top: 15%;
+  user-select: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000f32;
+  width: 64vw;
+  height: 80px;
 }
 
-.header .nav .social-media-icon {
-    color: #ccd1dd;
-    display: flex;
-    width: 150px;
-}
-.header .nav .cart {
-    display: flex;
-    color: #ccd1dd;
-}
-.header .nav .cart .sup sup {  
-    background-color: transparent;
+.myHeader .nav .social-media-icon {
+  color: #ccd1dd;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 100%;
 }
 
-.header .nav .cart .sup {
-    text-align: center;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background-color: white;
-    color: black;
+.myHeader .nav .social-media-icon i:hover {
+  color: white;
+  cursor: pointer;
 }
-.header .nav .search-icon{
-    color: #ccd1dd;
+
+.myHeader .nav .cart {
+  display: flex;
+  color: #ccd1dd;
 }
-.header .nav ul {
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    display: flex;
-    gap: 30px;
+
+.myHeader .nav .cart .sup sup {
+  background-color: transparent;
+}
+
+.myHeader .nav .cart .sup {
+  text-align: center;
+  position: relative;
+  right: 9px;
+  bottom: 6px;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  color: black;
+}
+
+
+.myHeader .nav .cart {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  align-items: center;
+  height: 100%;
+}
+
+.myHeader .nav .cart i {
+  color: white;
+  cursor: pointer;
+}
+
+.myHeader .nav ul {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  width: 61%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
 }
 
-.header .nav ul li {
-    list-style: none;
-    color: #87858e;
+.myHeader .nav ul .myI {
+  padding: 4.5% 0 0 0;
+  height: 100%;
+  width: 120px;
+  cursor: pointer;
+  list-style: none;
+  color: #87858e;
+  text-align: center
 }
 
-.header .nav ul li:hover {
-    color: white;
+.myHeader .nav ul .myI:hover {
+  color: white;
+}
+
+/* ===========list drop down started========== */
+
+.nav .myI .drop-dwon-list {
+  text-align: left;
+  user-select: none;
+  font-family: sans-serif;
+  line-height: 30px;
+  color: black;
+  padding: 10px;
+  text-transform: uppercase;
+  list-style: none;
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  width: auto;
+  justify-content: space-evenly;
+  visibility: hidden;
+  border: 1px solid black;
+  position: absolute;
+  top: 85%;
+
+}
+
+.nav .myI .drop-dwon-list li {
+  padding: 5px;
+  height: 100%;
+  color: #727272;
+}
+
+.nav .myI .drop-dwon-list li:hover {
+  background-color: #092f87;
+  color: white;
+}
+
+/*================= childe drop down menu ==================== */
+.nav .myI .drop-dwon-list li .child-menu {
+  position: absolute;
+  top: 83%;
+  background: white;
+  border: 1px solid;
+  left: 185px;
+  width: 166px;
+  height: auto;
+  list-style: none;
+  visibility: hidden;
+
+}
+
+hr {
+  background-color: rgb(228, 223, 223);
+  height: 1px;
+  border: none;
+}
+
+/* ===========Search bar module started========== */
+.myHeader .nav .search-icon {
+  color: #ccd1dd;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  width: auto;
+  font-size: 20px;
+  
+}
+
+.myHeader .nav .search-icon i:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.search-icon .search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 32%;
+  right: 1px;
+  top: 100%;
+  height: 50px;
+  visibility: hidden;
+  padding: 5px;
+  background-color: white;
+}
+
+.search-icon .search-bar .search-input {
+  outline: none;
+  font-family: Helvetica, sans-serif;
+  text-transform: capitalize;
+  padding: 0 0 0 5px;
+  border: 2px solid #f2f2f2;
+  width: 85%;
+  height: 100%;
+  color: #727272;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.search-icon .search-bar .search-input::placeholder {
+  color: #a1a1a1;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+.search-icon .search-bar button {
+  background-color: #001a57;
+  color: white;
+  width: 13.9%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+.search-icon .search-bar button .searching-icon {
+  font-size: 27px;
 }

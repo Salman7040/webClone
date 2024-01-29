@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Clone</title>
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="footer.css">
+    <!-- <link rel="stylesheet" href="footer.css"> -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+    </style>
 </head>
 
 <body>
 
-    <div class="header">
+    <div class="myHeader">
         <div class="basics-detail">
 
             <span class="logo"><img src="./images/logo.png" alt="Company Logo"></span>
@@ -36,15 +41,68 @@
 
         <div class="nav">
             <ul>
-                <li>Home <i class="ri-arrow-down-s-line"></i> </li>
-                <li>Pages <i class="ri-arrow-down-s-line"></i></li>
-                <li>Service <i class="ri-arrow-down-s-line"></i></li>
-                <li>Portfolio <i class="ri-arrow-down-s-line"></i></li>
-                <li>Blog <i class="ri-arrow-down-s-line"></i></li>
-                <li>Contact <i class="ri-arrow-down-s-line"></i></li>
+                <li class="myI" onmouseleave="hide(this)">Home
+                    <i class="ri-arrow-down-s-line "></i>
+                    <ol class="drop-dwon-list">
+                        <li>home version one</li>
+                        <hr>
+                        <li>home version two</li>
+                    </ol>
+                </li>
+                <li class="myI" onmouseleave="hide(this)">Pages <i class="ri-arrow-down-s-line"></i>
+                    <ol class="drop-dwon-list">
+                        <li>about</li>
+                        <hr>
+                        <li>our team</li>
+                        <hr>
+                        <li>faq's</li>
+                        <hr>
+                        <li>404</li>
+                        <hr>
+                        <li>shop</li>
+                        <hr>
+                        <li>shop detail</li>
+                        <hr>
+                        <li onmouseover="childMenu(this)" onmouseout="hideChild(this)">third level menu <i
+                                class="ri-arrow-down-s-line"></i>
+                            <Ol class="child-menu">
+                                <li>Demo One</li>
+                                <hr>
+                                <li>Demo Two</li>
+                            </Ol>
+                        </li>
+
+                    </ol>
+                </li>
+                <li class="myI" onmouseleave="hide(this)">Service <i class="ri-arrow-down-s-line"></i>
+                    <ol class="drop-dwon-list">
+                        <li>service version one</li>
+                        <hr>
+                        <li>service version two</li>
+                        <hr>
+                        <li>service detail</li>
+                    </ol>
+                </li>
+                <li class="myI" onmouseleave="hide(this)">Portfolio <i class="ri-arrow-down-s-line"></i>
+                    <ol class="drop-dwon-list">
+                        <li>project</li>
+                        <hr>
+                        <li>project detail</li>
+
+                    </ol>
+                </li>
+                <li class="myI" onmouseleave="hide(this)">Blog <i class="ri-arrow-down-s-line"></i>
+                    <ol class="drop-dwon-list">
+                        <li>blog list</li>
+                        <hr>
+                        <li>blog grid</li>
+                        <hr>
+                        <li>bolg detail</li>
+                    </ol>
+                </li>
+                <li class="myI">Contact <i class="ri-arrow-down-s-line"></i>
+                </li>
             </ul>
-
-
 
             <div class="social-media-icon">
                 <i class="ri-facebook-fill"></i>
@@ -58,23 +116,40 @@
                 <div class="sup"><sup>2</sup></div>
             </div>
             <div class="search-icon">
-                <i class="ri-search-line"></i>
+                <i class="ri-search-line" onclick="searchOn()"></i>
+                <div class="search-bar">
+                    <input type="text" class="search-input" placeholder="enter your search">
+                    <button><i class="ri-search-line searching-icon"></i></button>
+                </div>
             </div>
-
 
         </div><!-- nav -->
 
     </div><!-- header end -->
 
 
+    <div class="main">
+
+        <div class="msg">
+            <p>The government they survive artical of fortune</p>
+            <h1>WE IMPROVE YOUR SALES EFFICIENCY</h1>
+            <button class="contact-us">
+                contact us
+            </button>
+        </div>
+
+        <div class="slider-con">
+            <div class="slider" onclick="sliderChange(this,1)"></div>
+            <div class="slider" onclick="sliderChange(this,2)"></div>
+            <div class="slider" onclick="sliderChange(this,3)"></div>
+        </div>
 
 
-    <div class="main"></div>
+    </div>
+
+
+
     <div class="footer"></div>
-
-
-
-
     <script src="script.js"></script>
 </body>
 
