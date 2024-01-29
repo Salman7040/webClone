@@ -104,10 +104,6 @@ html {
   cursor: pointer;
 }
 
-.myHeader .nav .cart {
-  display: flex;
-  color: #ccd1dd;
-}
 
 .myHeader .nav .cart .sup sup {
   background-color: transparent;
@@ -127,9 +123,14 @@ html {
 
 
 .myHeader .nav .cart {
+
+  color: #ccd1dd;
+  border: 1px solid #0a1f4f;
+  border-top-color: #000f32;
+  border-bottom-color: #000f32;
   display: flex;
   justify-content: center;
-  width: 40px;
+  width: 55px;
   align-items: center;
   height: 100%;
 }
@@ -284,4 +285,11 @@ hr {
 
 .search-icon .search-bar button .searching-icon {
   font-size: 27px;
+}
+
+
+/*================= slash logic / ============*/
+
+.slash{
+  color: red;
 }
