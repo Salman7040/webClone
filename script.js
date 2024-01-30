@@ -46,12 +46,14 @@ function hideChild(x) {
 //======= on slider change ===========
 var inc = 2;
 let slider = document.getElementsByClassName("slider")
-let slide = document.getElementsByClassName("main")
+let slide = document.getElementsByClassName("mian-slider")
 
 setInterval(function () {
 
   slide[0].style.background = "url('./images/slide-" + inc + ".jpg')"
   slide[0].style.backgroundRepeat = "no-repeat"
+  slide[0].style.backgroundSize = "calc(100vw) 779px"
+  // background-size: calc(100vw) 779px;
 
 
   slider[inc - 1].style.background = "#20366b"
@@ -79,6 +81,7 @@ function sliderChange(myThis, para) {
 
   slide[0].style.background = "url('./images/slide-" + (para + 1) + ".jpg')"
   slide[0].style.backgroundRepeat = "no-repeat"
+  slide[0].style.backgroundSize = "calc(100vw) 779px"
 
 }
 

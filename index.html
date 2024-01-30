@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charles Clone</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="main.css">
@@ -17,6 +21,12 @@
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <div class="myHeader">
         <div class="basics-detail">
@@ -129,31 +139,145 @@
 
 
     <div class="main">
+        <div class="mian-slider">
+            <div class="msg">
+                <p>The government they survive artical of fortune</p>
+                <h1>WE IMPROVE YOUR SALES EFFICIENCY</h1>
+                <button class="contact-us">
+                    contact us
+                </button>
+            </div>
 
-        <div class="msg">
-            <p>The government they survive artical of fortune</p>
-            <h1>WE IMPROVE YOUR SALES EFFICIENCY</h1>
-            <button class="contact-us">
-                contact us
-            </button>
+            <div class="slider-con">
+                <div class="slider" onclick="sliderChange(this,0)"></div>
+                <div class="slider" onclick="sliderChange(this,1)"></div>
+                <div class="slider" onclick="sliderChange(this,2)"></div>
+            </div>
+        </div>
+        <!--=========== owl-carousel slider================ -->
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="bg-item b1">
+                    <div class="img-logo">
+                        <img src="./images/logo1.png" alt="logo">
+                    </div>
+                    <div class="logo-title">
+                        <h1>Consumer Insights</h1>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail">
+                        <p>The east side to a deluxe apartment in move on up to the east side</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="bg-item b2">
+                    <div class="img-logo">
+                        <img src="./images/logo2.png" alt="logo">
+                    </div>
+                    <div class="logo-title">
+                        <h1>Emerging Ideas</h1>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail">
+                        <p>The east side to a deluxe apartment in move on up to the east side</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="bg-item b3">
+                    <div class="img-logo">
+                        <img src="./images/logo3.png" alt="logo">
+                    </div>
+                    <div class="logo-title">
+                        <h1>Thought Leadership</h1>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail">
+                        <p>The east side to a deluxe apartment in move on up to the east side</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="bg-item b4">
+                    <div class="img-logo">
+                        <img src="./images/logo4.png" alt="logo">
+                    </div>
+                    <div class="logo-title">
+                        <h1>Marketing Goals</h1>
+                    </div>
+                    <div class="line"></div>
+                    <div class="detail">
+                        <p>The east side to a deluxe apartment in move on up to the east side</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
-        <div class="slider-con">
-            <div class="slider" onclick="sliderChange(this,0)"></div>
-            <div class="slider" onclick="sliderChange(this,1)"></div>
-            <div class="slider" onclick="sliderChange(this,2)"></div>
+        <!--========== About our company ============ -->
+
+        <div class="abt-comp">
+            <div class="comp-img">
+                <img src="./images/abtComp.jpg" alt="About our company image">
+            </div>
+
+            <div class="abt-our-comp">
+                <div class="abt-wrt">
+                    <h2>ABOUT OUR COMPANY</h2>
+                    <div class="abt-line"></div>
+                    <p>A tale of a fateful trip that started from this tropic port aboard this tiny ship today still
+                        wanted
+                        by the government they survive as soldiers of fortune to a deluxe apartment in the sky moving on
+                        up
+                        to the east side a family.</p>
+                    <p>
+                        The government they survive as soldiers of fortune baby if you've ever wondered the east side to
+                        a
+                        deluxe apartment.
+                    </p>
+
+
+                    <div class="boundary-line"></div>
+                    <div class="rewards">
+                        <img src="./images/star.png" alt="star">
+                        <img src="./images/medal.png" alt="medal">
+                        <img src="./images/goal.png" alt="goal">
+                    </div>
+
+                </div>
+
+               
+            </div>
         </div>
 
 
-    
     </div>
-    <!-- <div class="mini-frame">
-            
-    </div> -->
-
+    <!--================= main body end ===============-->
 
     <div class="footer"></div>
     <script src="script.js"></script>
+    <!--=========== owl-carousel js================ -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
