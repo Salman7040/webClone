@@ -1,12 +1,12 @@
 .main {
   width: calc(100vw);
-  height: calc(300vh - 20vh);
+  height: calc(600vh - 20vh);
 }
 
 .main .mian-slider {
   border: 1px solid #dae1e2;
   width: calc(100vw);
-  height: calc(109.8vh - 20vh);
+  height: 44.3vw;
   background: url("./images/slide-1.jpg");
   background-size: calc(100vw) 779px;
   background-repeat: no-repeat;
@@ -29,17 +29,18 @@
 .main .mian-slider .msg p {
   margin-bottom: 32px;
   font-weight: 300;
-  font-size: 26px;
+  font-size: 1.48vw;
   color: #9a93b5;
 }
 
 .main .mian-slider .msg h1 {
   font-weight: 900;
-  font-size: 55px;
+  font-size: 3.2vw;
   color: #001a57;
 }
 
 .main .mian-slider .msg .contact-us {
+  font-family: "Nunito Sans", sans-serif;
   margin: 30px 0 0 0;
   border: 1px solid #dae1e2;
   padding: 12px;
@@ -66,13 +67,13 @@
 .main .mian-slider .slider-con {
   cursor: pointer;
   position: relative;
-  bottom: 11%;
-  width: 3%;
+  bottom: 8vw;
+  width: 3vw;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: end;
-  gap: 15px;
+  gap: 0.7vw;
   justify-content: center;
 }
 
@@ -90,7 +91,7 @@
 .owl-carousel {
   font-family: "Nunito Sans", sans-serif;
   width: calc(100vw);
-  height: 319px;
+  height: 323px;
   background-color: transparent;
 }
 
@@ -113,9 +114,8 @@
 .owl-carousel .item {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  width: 444px;
-  height: 323px;
+  width: 25.2vw;
+  height: 319px;
   transition: all ease-in-out 0.3s;
   background-color: transparent;
 }
@@ -125,9 +125,6 @@
 
 }
 
-
-
-
 .owl-carousel .item .bg-item {
 
   gap: 8px;
@@ -135,7 +132,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 444px;
+  width: 100%;
   height: 99%;
   justify-content: center;
   transition: all ease 0.4;
@@ -188,21 +185,22 @@
 .abt-comp .comp-img {
   display: inline-block;
   text-align: right;
-  width: 50%;
-  height: 100%;
+  background: transparent;
+  width: calc(50vw);
+  height: 23.34vw;
 }
 
 .abt-comp .comp-img img {
   margin: 0 10% 0 0;
-  width: 550px;
-  height: 100%;
+  width: 30vw;
+  height: 47.4vh;
 }
 
 .abt-comp .abt-our-comp {
   float: right;
   background-color: transparent;
-  width: 50%;
-  height: 100%;
+  width: calc(50vw);
+  height: 23.34vw;
 }
 
 .abt-comp .abt-our-comp .abt-wrt {
@@ -218,30 +216,494 @@
 }
 
 .abt-comp .abt-our-comp .abt-wrt h2 {
-  font-size: 38px;
+  font-size: 2.16vw;
   font-weight: 900;
   color: #232323;
 }
 
 .abt-comp .abt-our-comp .abt-wrt .abt-line {
+  width: 2.23vw;
+  height: 0.5vw;
+  background-color: #c3c3c3;
+  border-radius: 0.9vw;
+}
+
+.abt-comp .abt-our-comp .abt-wrt p {
+  font-size: 1.01vw;
+  color: #555555;
+}
+
+.abt-comp .abt-our-comp .abt-wrt .boundary-line {
+  height: 1px;
+  width: 100%;
+  background-color: #ebebeb;
+}
+
+.abt-comp .abt-our-comp .abt-wrt .rewards {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.abt-comp .abt-our-comp .abt-wrt .rewards .heading img {
+  width: 4vw;
+  height: 4vw;
+}
+
+.abt-comp .abt-our-comp .abt-wrt .rewards .heading h4 {
+  font-size: 1.32vw;
+  font-weight: 700;
+}
+
+.horizontal {
+  height: 90%;
+  border: 0.1px dashed rgb(217, 215, 215);
+}
+
+
+
+/*================== z-index background content css module =====================*/
+
+.bg-contant {
+  font-family: "Nunito Sans", sans-serif;
+  z-index: -10;
+  margin-top: 7%;
+  width: calc(100vw);
+  height: 92vw;
+  background: url("./images/fullBg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+}
+
+.bg-contant .bg-top-containt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc(100vw);
+  height: 19.2vw;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.bg-contant .bg-top-containt .text-cont {
+  padding: 0 31px;
+  width: 60%;
+  height: 103px;
+}
+
+.bg-contant .bg-top-containt .text-cont h2 {
+  font-size: 2.36vw;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.bg-contant button {
+  font-family: Helvetica, sans-serif;
+  margin: 30px 0 0 0;
+  padding: 12px;
+  font-weight: 700;
+  border: none;
+  background-color: #001a57;
+  color: white;
+  outline: none;
+  line-height: 25px;
+  border-radius: 5px;
+  width: 170px;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.4s;
+}
+
+.bg-contant button:hover {
+  background-color: #01123d;
+}
+
+/*================== our services background content css module =====================*/
+
+.bg-contant .our-service {
+  height: 41vw;
+  width: 100%;
+  border: 1px solid;
+  background-color: white;
+}
+
+.bg-contant .text-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+
+}
+
+.bg-contant .text-detail h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.15vw;
+  font-weight: 900;
+}
+
+.bg-contant .text-detail p {
+  font-size: 1.02vw;
+  font-weight: 400;
+  color: #555555;
+}
+
+.bg-contant .text-detail .bdr-line {
   width: 40px;
-  height: 4px;
+  height: 5px;
   background-color: #c3c3c3;
   border-radius: 10px;
 }
 
-.abt-comp .abt-our-comp .abt-wrt p {
-  font-size: 18px;
+/*================== our services details content css module =====================*/
+.main-services {
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100vw);
+  height: 30vw;
+  background-color: white;
+}
+
+.main-services h4 {
+  margin-top: 2%;
+  font-size: 1.362vw;
+  color: #232323;
+  font-weight: 400;
+}
+
+.main-services .service-contact {
+
+  display: flex;
+  justify-content: center;
+}
+
+.main-services .service-contact a {
+  margin-top: 1.6%;
+  color: #001A57;
+  font-size: 1.356vw;
+  font-weight: 400;
+}
+
+.services {
+  padding: 1% 0;
+  width: 73vw;
+  background: white;
+  height: 18.7vw;
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  grid-template-rows: 43% 43% 43%;
+  column-gap: 3%;
+  row-gap: 13%;
+  justify-content: center;
+}
+
+.main-services .services .service-type {
+  display: flex;
+  border: 1px solid #e9e9e9;
+}
+
+.main-services .services .service-type .services-detail {
+  width: 90%;
+  height: 100%;
+  padding: 5%;
+
+}
+
+.main-services .services .service-type img {
+  border-radius: 4%;
+  width: 32%;
+  height: 100%;
+}
+
+.main-services .services .service-type .services-detail a {
+  text-decoration: none;
+  font-size: 1.25vw;
+  font-weight: 700;
+  color: #061B4F;
+
+}
+
+.main-services .services .service-type .services-detail p {
+  font-size: 1.01vw;
   color: #555555;
+
 }
-.abt-comp .abt-our-comp .abt-wrt .boundary-line{
-  height: 1px;
-  width: 100%;
-  background-color: gray;
+
+.main-services .services .service-type .services-detail .read-more {
+  position: relative;
+  top: 16%;
+  font-size: 0.791vw;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-.abt-comp .abt-our-comp .abt-wrt .rewards{
+
+.main-services .services .service-type .services-detail .read-more i {
+  color: gray;
+}
+
+/*================== our services background z-index image content css module =====================*/
+
+
+.bg-contant .z-bg-image-con {
+  background: url("./images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 31.79vw;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-contant .z-bg-image-con .img-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 28vw 0 0;
+  border-radius: 0.5vw;
+  width: 35%;
+  height: 58%;
+  background-color: white;
+
+}
+
+.bg-contant .z-bg-image-con .img-detail .corner {
+  height: 1.5vw;
+  width: 1.5vw;
+  position: relative;
+  rotate: 50deg;
+  bottom: 5.9vw;
+  left: 32vw;
+  background-color: white;
+}
+
+.bg-contant .z-bg-image-con .img-detail .owl-salman {
+  width: 30vw;
+  height: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+.bg-contant .z-bg-image-con .img-detail .owl-salman .myItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: transparent;
   width: 100%;
-  height: 100%;
+  height: 14vw;
+  text-align: center;
+
+}
+
+.bg-contant .z-bg-image-con .img-detail .owl-salman .myItem p {
+  color: #7e7d7d;
+  font-size: 1.1vw;
+}
+
+.bg-contant .z-bg-image-con .img-detail .owl-salman .myItem h6 {
+  font-size: 20px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+
+  width: 1vw;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot:hover {
+  background-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #001a57;
+}
+
+.mySpan {
+  font-size: 0.91vw;
+}
+
+
+/*================== our team css module section =====================*/
+.our-team {
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 7vw;
+  width: 100vw;
+  background-color: yellow;
+  height: 36vw;
+}
+
+.our-team .head-title {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  width: 100vw;
+  height: 9vw;
+  background-color: white;
+}
+
+.our-team .head-title h2 {
+  font-size: 2.15vw;
+  color: #232323;
+  font-weight: 900;
+}
+
+.our-team .head-title .border-line {
+  width: 2.23vw;
+  height: 0.2vw;
+  background-color: #c3c3c3;
+  border-radius: 0.9vw;
+}
+
+.our-team .head-title p {
+  color: #555555;
+  font-size: 1.022vw;
+  font-weight: 400;
+}
+
+.our-team .team-images {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  width: 100vw;
+  height: 27vw;
+  background-color: white;
+}
+
+.our-team .team-images .emp-image {
+  border: 1px solid #dddcdc;
+  border-radius: 0.3vw;
+  background-color: white;
+  width: 15vw;
+  height: 20vw;
+}
+
+.our-team .team-images .emp-image img {
+  border-radius: 0.3vw 0.3vw 0 0;
+  width: 14.9vw;
+  height: 16vw;
+}
+
+.our-team .team-images .emp-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-team .team-images .emp-detail h6 {
+  font-size: 1.22vw;
+  font-weight: 600;
+}
+
+.our-team .team-images .emp-detail .dt-span {
+  color: #555555;
+  font-size: 0.92vw;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*================== background map and some detail's css module section =====================*/
+
+
+.bg-map-con {
+  font-family: "Nunito Sans", sans-serif;
+  width: 100vw;
+  height: 30vw;
+  background: url("./images/bgMap.png");
+  background-repeat: no-repeat;
+  filter: brightness(70%);
+  background-size: 50%;
+  background-position: center;
+}
+
+.bg-map-con .abt-comp-success {
+  width: 100vw;
+  height: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg-map-con .abt-comp-success .myheading-dt {
+  text-align: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 10vw;
+
+}
+
+.bg-map-con .abt-comp-success .myheading-dt h6 {
+  font-size: 1.1vw;
+  font-weight: 700;
+  color: #001A57;
+}
+
+.bg-map-con .abt-comp-success .myheading-dt h2 {
+  font-size: 2.4vw;
+  font-weight: 700;
+  color: #232323;
+}
+
+.bg-map-con .abt-comp-success .comp-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  width: 58vw;
+  height: 13vw;
+}
+
+.bg-map-con .abt-comp-success .comp-data .myData {
+  text-align: center;
+
+  width: 11vw;
+  height: 8vw;
+}
+
+.bg-map-con .abt-comp-success .comp-data .myData .timer1 {
+  font-size: 4vw;
+  color: #001a57;
+}
+
+.bg-map-con .abt-comp-success .comp-data .myData p {
+  font-size: 1vw;
+  color: #555555;
+  font-weight: 400;
+}
+
+.bg-map-con .abt-comp-success .comp-data .myData .oprator {
+  font-size: 2.3vw;
+  color: #001A57;
+  font-weight: 300;
+}
+
+.bg-map-con .abt-comp-success button{
+  font-family: Helvetica, sans-serif;
+    margin: 30px 0 0 0;
+    padding: 12px;
+    font-weight: 700;
+    border: none;
+    background-color: #062878;
+    color: white;
+    outline: none;
+    line-height: 25px;
+    border-radius: 5px;
+    width: 200px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.4s;
 }

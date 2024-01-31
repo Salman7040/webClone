@@ -52,17 +52,17 @@ setInterval(function () {
 
   slide[0].style.background = "url('./images/slide-" + inc + ".jpg')"
   slide[0].style.backgroundRepeat = "no-repeat"
-  slide[0].style.backgroundSize = "calc(100vw) 779px"
-  // background-size: calc(100vw) 779px;
+  slide[0].style.backgroundSize = "calc(100vw) 44.3vw"
+
 
 
   slider[inc - 1].style.background = "#20366b"
   for (let i = 0; i < slider.length; i++) {
-    if ((inc-1) != i)
+    if ((inc - 1) != i)
       slider[i].style.background = "white"
   }
 
-  console.log(inc-1)
+  console.log(inc - 1)
   inc++;
 
   if (inc >= 4)
@@ -81,7 +81,7 @@ function sliderChange(myThis, para) {
 
   slide[0].style.background = "url('./images/slide-" + (para + 1) + ".jpg')"
   slide[0].style.backgroundRepeat = "no-repeat"
-  slide[0].style.backgroundSize = "calc(100vw) 779px"
+  slide[0].style.backgroundSize = "calc(100vw) 44.3vw"
 
 }
 
