@@ -1,0 +1,401 @@
+.footer {
+    width: 100vw;
+    height: calc(160vh);
+    background-color: gray;
+}
+
+/*================= footer heading css module =============== */
+.footer .free-consult-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    width: 100vw;
+    height: 9vw;
+    background-color: white;
+}
+
+.footer .free-consult-heading h2 {
+    font-size: 2.15vw;
+    color: #232323;
+    font-weight: 900;
+}
+
+.footer .free-consult-heading .border-line {
+    width: 2.23vw;
+    height: 0.2vw;
+    background-color: #c3c3c3;
+    border-radius: 0.9vw;
+}
+
+.footer .free-consult-heading p {
+    color: #555555;
+    font-size: 1.022vw;
+    font-weight: 400;
+}
+
+/*================= footer feadback befor form image css module =============== */
+
+
+.footer .feadback-form-section {
+    width: 100%;
+    height: 35vw;
+    display: grid;
+
+    grid-template-columns: 32.37vw 32.37vw;
+    grid-template-rows: 28.37vw 28.37vw;
+    justify-content: center;
+    background-color: white;
+
+}
+
+
+.footer .feadback-form-section .fead-img img {
+    height: 100%;
+    width: 100%;
+}
+
+/*================= footer feadback form css module =============== */
+
+.footer .feadback-form-section .fead-form {
+    box-shadow: 2px 2px 20px rgb(211, 210, 210);
+}
+
+.footer .feadback-form-section .fead-form button {
+    font-family: Helvetica, sans-serif;
+    margin: 0 0 0 2vw;
+    padding: 12px;
+    font-weight: 700;
+    border: none;
+    background-color: #001a57;
+    color: white;
+    outline: none;
+    line-height: 25px;
+    border-radius: 5px;
+    width: 170px;
+    text-transform: uppercase;
+    transition: all ease-in-out 0.4s;
+}
+
+.footer .feadback-form-section .fead-form button:hover {
+    background-color: #011137;
+}
+
+.footer .feadback-form-section .fead-form form {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.footer .feadback-form-section .fead-form form .D {
+    display: flex;
+    gap: 1.5vw;
+    width: 100%;
+    height: 30%;
+}
+
+.D .line-D {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.D .line-D .hover-line {
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+}
+
+.hover-line-textArea {
+    width: 100%;
+    height: 1px;
+    background-color: #e3e3e3;
+
+}
+
+.line-D:hover .hover-line {
+    background-color: #011543;
+}
+
+.line-D:hover .hover-line-textArea {
+    background-color: #011543;
+}
+
+
+
+.footer .feadback-form-section .fead-form form input {
+    width: 100%;
+    height: 2vw;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+
+
+.footer .feadback-form-section .fead-form form select {
+    color: #555555;
+    font-size: 18px;
+    width: 100%;
+    height: 2vw;
+    outline: none;
+    border: none;
+}
+
+
+.footer .feadback-form-section .fead-form form textarea {
+    width: 100%;
+    font-size: 18px;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+/*================= our partner company logo etc with owl crousel css module =============== */
+
+.our-partner {
+    background-color: #f8faff;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 7vw 7vw;
+    width: 100vw;
+    height: 7vw;
+}
+
+.our-partner .h-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.our-partner .h-text h2 {
+    color: #232323;
+    width: 7vw;
+    height: 3vw;
+}
+
+
+.owl-partner {
+    width: 80%;
+    height: 55%;
+}
+
+.owl-partner .myPt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4vw;
+    height: 3.3vw;
+
+}
+
+.myPt img {
+    width: 100%;
+    height: 100%;
+}
+
+.owl-partner .myPt:hover {
+    background-color: #f8faff;
+}
+
+/*================= main down footer  css module =============== */
+
+
+.footer .main-footer {
+    background-color: #001648;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: calc(100vw);
+    height: 56.62vh;
+}
+
+.main-footer .footer-con {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+    width: 70%;
+    height: 80%;
+}
+
+/*================= 1. about our cunsulting css module =============== */
+
+.main-footer .footer-con .abt-our-cons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    width: 20%;
+}
+
+.main-footer .footer-con .abt-our-cons a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*================= 2. resent post css module =============== */
+
+.resent-post {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    width: 33%;
+
+}
+.resent-post hr{
+    width: 90%;
+    height: 1px;
+    background-color: #1e315c;
+}
+
+.resent-post .img-detail-text {
+    display: flex;
+    gap: 0.6vw;
+    align-items: center;
+    width: 100%;
+    height: 5vw;
+}
+
+.resent-post .img-detail-text img {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 0.2vw;
+}
+
+.abt-img {
+    line-height: 1.5vw;
+}
+
+.calender {
+    gap: 0.5vw;
+    display: flex;
+}
+
+/*================= 2. resent post css module =============== */
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 15%;
+    font-size: 1vw;
+}
+
+.solution ul {
+    margin-top: 1.3vw;
+    line-height: 1.8vw;
+}
+
+.solution ul li:hover {
+    color: white;
+}
+
+/*================= 4. NEWSLETTER css module =============== */
+
+.news-letter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    height: 60%;
+    width: 24%;
+}
+.news-letter input{
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 100%;
+    background: transparent;
+    height: 2vw;
+}
+.news-letter hr{
+    height: 1px;
+    background-color: #1e315c;
+}
+.for-line .my-line{
+    width: 90%;
+    height: 1px;
+    background-color: #1e315c;
+}
+.news-letter button{
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #05225e;
+    height: 3vw;
+    width: 8vw;
+    border-radius: 0.3vw;
+    font-size: 0.7vw;
+    font-weight: 900;
+    transition: all ease-in-out 0.5s;
+}
+.news-letter button:hover{
+    background-color: #001138;
+    color: white;
+}
+
+/*================= 1. footer nav and copy right  css module =============== */
+
+
+.copy-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 4vw;
+    background-color: #001138;
+}
+.copy-right p{
+    width: 50%;
+    font-size: 1vw;
+    text-align: center;
+    color: #9CA6BF;
+}
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    
+}
+.footer-nav ul {
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+    font-size: 1vw;
+    
+}
+.footer-nav ul a{
+    color:#9CA6BF;
+    text-decoration: none;
+}
+.footer-nav ul a:hover{
+    color: white;
+}
+.top{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    background-color: #001a57;
+}
+.top a{
+    text-decoration: none;
+}
+.top i{
+    font-size: 1.5vw;
+    color: #9CA6BF;
+}
