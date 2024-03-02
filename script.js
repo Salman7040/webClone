@@ -85,3 +85,26 @@ function sliderChange(myThis, para) {
 
 }
 
+
+// COMPANY SUCCESS stats changes
+
+stats = document.getElementsByClassName("timer1")
+let stInc = 0
+function reloadCompStats() {
+  t1 = 30, t2 = 100, t3 = 53, t4 = 24;
+
+
+
+  setInterval(function () {
+
+    if (stInc <= t1)
+      stats[0].innerHTML = stInc
+    if (stInc <= t2)
+      stats[1].innerHTML = stInc
+    if (stInc <= t3)
+      stats[2].innerHTML = stInc
+    if (stInc <= t4)
+      stats[3].innerHTML = stInc
+    stInc++
+  }, 25);
+}
