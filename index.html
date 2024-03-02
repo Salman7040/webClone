@@ -80,9 +80,10 @@
                         <hr>
                         <li>shop detail</li>
                         <hr>
-                        <li onmouseover="childMenu(this)" onmouseout="hideChild(this)">third level menu <i
-                                class="ri-arrow-down-s-line"></i>
-                            <Ol class="child-menu">
+                        <li onmouseover="childMenu(this)" onmouseleave="hideChild(this)">third level menu
+                            <i class="ri-arrow-down-s-line"  >
+                            </i>
+                            <Ol class="child-menu" >
                                 <li>Demo One</li>
                                 <hr>
                                 <li>Demo Two</li>
@@ -146,7 +147,8 @@
 
         </div><!-- nav -->
 
-    </div><!-- header body end -->
+    </div>
+    <!-- header body end -->
 
 
     <div class="main">
@@ -663,7 +665,7 @@
             </div>
 
             <div class="copy-right">
-                <p>	&#169; Copyrights 2018. All Rights Reserved.</p>
+                <p> &#169; Copyrights 2018. All Rights Reserved.</p>
                 <div class="footer-nav">
                     <ul>
                         <li><a href="#">About</a></li>
@@ -680,16 +682,10 @@
 
 
     </div>
-
-
     <!--================= footer body end ===============-->
 
-
-
-
-
-
     <script src="script.js"></script>
+
     <!--=========== owl-carousel js start ================ -->
     <script>
         $('.owl-partner').owlCarousel({
